@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.springboot.mapper.StudentMapper">
+
+    <!--<cache
+            eviction="FIFO"
+            flushInterval="60000"
+            size="512"
+            readOnly="true"/>-->
+    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache" flushInterval="6" readOnly="true" size="1"></cache>-->
+
+    <!-- 结果映射  最终映射type的类型 mybatis高级查询===联合查询  -->
+
+
+
+    <select id="getStudentById" resultType="com.springboot.entity.Student">
+     SELECT  * from student where id=#{ID}
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
